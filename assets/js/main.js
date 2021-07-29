@@ -28,6 +28,12 @@ function linkAction() {
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+const btnEnviar = document.getElementById('btnEnviar')
+
+btnEnviar.addEventListener('click', () => {
+  alert('Envio de e-mail em processo de implementação.')
+  window.location.href = "https://alissonmoraesdev.netlify.app/"
+})
 // Scroll reveal animation
 
 const sr = ScrollReveal({
@@ -41,8 +47,6 @@ sr.reveal('.home__title', {})
 sr.reveal('.button', {delay: 200})
 sr.reveal('.home__img', {delay: 400})
 sr.reveal('.home__social-icon', {interval: 200})
-
-sr.reveal('.section-title', {delay: 100})
 
 // Scroll About 
 
